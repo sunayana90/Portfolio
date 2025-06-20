@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Sunayana Yadav</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm</h3>
+            <h1>Sunayana Yadav</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>
+                I'm a Third-year Electronics and Telecommunication Engineering student with a passion for building
+                intelligent
+                systems. I love exploring AI, Machine Learning, and Data Science — from creating models to deploying
+                real-world
+                solutions. Currently seeking exciting opportunities to apply and grow my skills through internships or
+                collaborations.
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sunayana-yadav-96438a315/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/9920599564" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/nanci_184/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/sunayana90" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/profiledp.png" alt="">
+        </div>
+    </section>
+
+    <!-- About section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/profiledp.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <!-- <h3>Frontend Developer</h3> -->
+            <p>• I'm a third-year Electronics and Telecommunication Engineering student based in Mumbai, India.
+                <br>
+                • I'm passionate about building intelligent systems using Artificial Intelligence, Machine Learning,
+                Data Science, and Web
+                Development.
+                <br>
+                • I'm currently seeking opportunities for internships, collaborations, and real-world projects where I
+                can apply and grow
+                my skills.
+                <br>
+                • I'm a curious learner, strong problem-solver, and team player who enjoys taking on challenges.
+            </p>
+            <div class="about_buttons">
+                <p id="skills_button" class="active" onclick="openskill('skills','skills_button')">skills</p>
+                <p id="education_button" onclick="openskill('education','education_button')">Education</p>
+            </div>
+            <div class="about_skills_content">
+                <div class="skills active">
+
+                    <div class="skill-group">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <p>Python, C++, Java, JavaScript</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fas fa-brain"></i> AI / ML / Data Science</h3>
+                        <p>NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, TensorFlow, OpenCV, Keras</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                        <p>HTML, CSS, JavaScript, Streamlit, Flask</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                        <p>Git, GitHub, Google Colab, MySQL, VS Code</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3><i class="fas fa-user-check"></i> Soft Skills</h3>
+                        <p>Problem Solving, Communication, Teamwork, Time Management</p>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <ul>
+                        <li>
+                            <span>2023 – 2027</span><br>
+                            <strong>Lokmanya Tilak College of Engineering, Navi Mumbai</strong><br>
+                            Bachelor's of Engineering, Electronics and Telecommunication
+                        </li>
+                        <li>
+                            <span>2021 – 2023</span><br>
+                            <strong>Vani Vidyalaya Junior Collage, Mulund</strong><br>
+                            Higher Secondary Education – Science Stream
+                        </li>
+                        <li>
+                            <span>2021</span><br>
+                            <strong>Gyanodaya Vidya Mandir</strong><br>
+                            Secondary School Certificate (SSC) – 10th Grade
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Developer</h3>
+                <p>designing, building, and maintaining websites and web applications using HTML, CSS and Javascript.
+                    have the necessary
+                    technical skills, knowledge, communication skills and ability to work collaboratively.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Web Designing</h3>
+                <p>create visually appealing and user-friendly website layouts. designing graphics, selecting color
+                    schemes, choosing
+                    fonts, and organizing content for optimal user experience. ensuring websites look well on various
+                    devices.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Software Developer</h3>
+                <p>design, code, test, and maintain software applications and systems. write and debug code in various
+                    programming
+                    languages (such as Java, Python, or C++). Collaborate with other developers, engineers, and
+                    stakeholders.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI/ML Engineer</h3>
+                <p>I develop and optimize ML and deep learning models for tasks like classification, prediction, and
+                    analysis. Skilled in
+                    Python, TensorFlow, and Scikit-learn, I also handle data cleaning, visualization, and model
+                    deployment using tools like
+                    Streamlit and Flask.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects section  -->
+
+    <section class="projects" id="projects">
+        <h2 class="heading"><span>Projects</span></h2>
+        <div class="projects_container">
+
+            <div class="projects_box project1">
+                <h3>Movie Recommender</h3>
+                <img src="img/Movie-Recommender.png" alt="Project Screenshot">
+                <p>A content-based movie recommender using Python and Scikit-learn that suggests similar movies based on
+                    genre, cast, and
+                    keywords via cosine similarity.</p>
+                <a href="https://github.com/sunayana90/Movie-Recommendation--System" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project2">
+                <h3>Laptop Price Predictor</h3>
+                <img src="img/Laptop-Price.png" alt="Project Screenshot">
+                <p>A machine learning model that predicts laptop prices from specifications like brand, CPU, RAM,
+                    storage, and display
+                    features using Python and Scikit-learn.</p>
+                <a href="https://github.com/sunayana90/Laptop-Price-Prediction" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project3">
+                <h3>Email Spam Classifier</h3>
+                <img src="img/Spam-Classifier.png" alt="Project Screenshot">
+                <p>A text classification model that detects spam emails using NLP (TF-IDF) and machine learning with
+                    Scikit-learn.</p>
+                <a href="https://github.com/sunayana90/Email-spam-classifier" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project4">
+                <h3>AI Career Recommender</h3>
+                <img src="img/AICareer.png" alt="Project Screenshot">
+                <p>An AI tool that suggests career paths by analyzing user interests using conversational prompts, LLMs,
+                    and embeddings</p>
+                <a href="https://github.com/sunayana90/AI-Career-Recommender" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project5">
+                <h3>Netflix Landing Page Clone</h3>
+                <img src="img/Netflex.png" alt="Project Screenshot">
+                <p>A static replica of Netflix's homepage using HTML and CSS, built to practice front-end layout and
+                    responsive design
+                    skills.</p>
+                <a href="https://github.com/sunayana90/Netflix-Landing-Page-Clone" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project6">
+                <h3>Amazon Landing Page Clone</h3>
+                <img src="img/Amazon.png" alt="Project Screenshot">
+                <p>A static clone of Amazon's homepage built with HTML and CSS, replicating its layout, navigation, and
+                    styling for
+                    front-end development practice.</p>
+                <a href="https://github.com/sunayana90/Amazon-Landing-page-Clone" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+
+            <div class="projects_box project7">
+                <h3>Digital Clock</h3>
+                <img src="img/clock.png" alt="Project Screenshot">
+                <p>A sleek, real-time digital clock that updates every second using JavaScript. Features a modern UI
+                    with glowing neon
+                    effects and responsive design. Showcases time-based DOM manipulation and styling techniques.</p>
+                <a href="https://github.com/sunayana90/Digital-Clock" target="_blank" class="btn">View
+                    Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer section design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by @Sunayana Yadav | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+        <div class="social-media" style="width: 100%;">
+            <a href="https://www.linkedin.com/in/sunayana-yadav-96438a315/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/9920599564" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/nanci_184/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/sunayana90" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+    </footer>
+
+    <!-- scroll reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- send email  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <!-- Main JS -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>
